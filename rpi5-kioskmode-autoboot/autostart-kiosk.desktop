@@ -1,0 +1,8 @@
+//cd to the directory in the name,replace the "-" with "/"
+//replace the website in the script to your desired website
+[Desktop Entry]
+Type=Application
+Name=Kiosk (Chromium)
+Comment=Start Chromium in kiosk mode at login
+Exec=/usr/bin/chromium-browser --kiosk 'https://www.popmart.com/us' 'https://us.jellycat.com/' --no-first-run --noerrdialogs --disable-infobars --start-maximized --user-data-dir=/home/%u/.kiosk-profile
+X-GNOME-Autostart-enabled=true
