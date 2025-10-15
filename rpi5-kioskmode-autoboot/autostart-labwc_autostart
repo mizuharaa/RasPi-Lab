@@ -1,0 +1,9 @@
+//replace "-" with "/" and cd to that directory to write
+!/usr/bin/env bash
+# labwc autostart (Wayland). One command per line. No X11-only tools here.
+# Disable screen blanking in raspi-config (Display Options → Screen Blanking → Disable).
+
+//Script here
+/usr/bin/chromium-browser --kiosk 'https://www.popmart.com/us' 'https://us.jellycat.com/' \
+  --no-first-run --noerrdialogs --disable-infobars --start-maximized \
+  --user-data-dir=/home/$USER/.kiosk-profile &
